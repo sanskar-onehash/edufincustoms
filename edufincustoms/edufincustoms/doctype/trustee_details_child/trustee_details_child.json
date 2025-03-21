@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-07 12:34:45.891139",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trustee_name",
+  "trustee_father_name",
+  "trustee_dob",
+  "phone_no",
+  "email_id",
+  "trustee_pan_no",
+  "trustee_aadhaar_no",
+  "column_break_jya7v",
+  "trustee_gender",
+  "trustee_address",
+  "trustee_city",
+  "trustee_state",
+  "trustee_pincode"
+ ],
+ "fields": [
+  {
+   "fieldname": "trustee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trustee Name"
+  },
+  {
+   "fieldname": "trustee_father_name",
+   "fieldtype": "Data",
+   "label": "Trustee Father Name"
+  },
+  {
+   "fieldname": "trustee_dob",
+   "fieldtype": "Date",
+   "label": "Trustee DOB"
+  },
+  {
+   "default": "+91-",
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone No.",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Id",
+   "options": "Email"
+  },
+  {
+   "fieldname": "trustee_pan_no",
+   "fieldtype": "Data",
+   "label": "Trustee PAN No."
+  },
+  {
+   "description": "Enter the last 4 digits of the Aadhaar No. only.",
+   "fieldname": "trustee_aadhaar_no",
+   "fieldtype": "Data",
+   "label": "Trustee Aadhaar No."
+  },
+  {
+   "fieldname": "column_break_jya7v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trustee_gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trustee Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "trustee_address",
+   "fieldtype": "Small Text",
+   "label": "Trustee Address"
+  },
+  {
+   "fieldname": "trustee_city",
+   "fieldtype": "Link",
+   "label": "Trustee City",
+   "options": "City Master"
+  },
+  {
+   "fieldname": "trustee_state",
+   "fieldtype": "Link",
+   "label": "Trustee State",
+   "options": "States"
+  },
+  {
+   "fieldname": "trustee_pincode",
+   "fieldtype": "Data",
+   "label": "Trustee Pincode"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-07 12:34:45.891139",
+ "modified_by": "Administrator",
+ "module": "Edufincustoms",
+ "name": "Trustee Details Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

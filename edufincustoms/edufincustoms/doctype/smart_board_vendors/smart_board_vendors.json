@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:vendor_name",
+ "creation": "2024-01-07 12:35:53.063464",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor_details_tab",
+  "vendor_name",
+  "office_address",
+  "office_city",
+  "office_state",
+  "office_pincode",
+  "column_break_pctti",
+  "pan_no",
+  "gst_no",
+  "contact_person_name",
+  "contact_person_phone_no",
+  "contact_person_email_id",
+  "type_of_organisation",
+  "deal_type",
+  "bank_account_details_tab",
+  "bank_name",
+  "bank_account_no",
+  "beneficiary_name",
+  "column_break_tpwoa",
+  "bank_account_type",
+  "bank_ac_ifsc_code",
+  "bank_branch",
+  "documents_tab",
+  "company_documents_section",
+  "agreement",
+  "partnership_deed",
+  "moa",
+  "column_break_j70x8",
+  "pan_card",
+  "aoa",
+  "column_break_cxm46",
+  "gst_certificate",
+  "board_resolution",
+  "column_break_wxiag",
+  "cancelled_cheque"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Vendor Details"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Vendor Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "office_address",
+   "fieldtype": "Small Text",
+   "label": "Office Address"
+  },
+  {
+   "fieldname": "office_city",
+   "fieldtype": "Link",
+   "label": "Office City",
+   "options": "City Master"
+  },
+  {
+   "fieldname": "office_state",
+   "fieldtype": "Link",
+   "label": "Office State",
+   "options": "States"
+  },
+  {
+   "fieldname": "office_pincode",
+   "fieldtype": "Data",
+   "label": "Office Pincode"
+  },
+  {
+   "fieldname": "column_break_pctti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No."
+  },
+  {
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No."
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name"
+  },
+  {
+   "fieldname": "contact_person_phone_no",
+   "fieldtype": "Phone",
+   "label": "Contact Person Phone No."
+  },
+  {
+   "fieldname": "contact_person_email_id",
+   "fieldtype": "Data",
+   "label": "Contact Person Email Id",
+   "options": "Email"
+  },
+  {
+   "fieldname": "type_of_organisation",
+   "fieldtype": "Select",
+   "label": "Type of Organisation",
+   "options": "\nProprietorship\nPartnership\nLLP (Limited Liability Partnership)\nPrivate Limited\nPublic Limited\nIndividual"
+  },
+  {
+   "fieldname": "deal_type",
+   "fieldtype": "Select",
+   "label": "Deal Type",
+   "options": "\nSubvention\nSubvention+ROI\nROI"
+  },
+  {
+   "fieldname": "bank_account_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bank Account Details"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Bank Account No."
+  },
+  {
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "fieldname": "column_break_tpwoa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Current",
+   "fieldname": "bank_account_type",
+   "fieldtype": "Select",
+   "label": "Bank Account Type",
+   "options": "\nCurrent\nSavings"
+  },
+  {
+   "fieldname": "bank_ac_ifsc_code",
+   "fieldtype": "Data",
+   "label": "Bank A/c IFSC Code"
+  },
+  {
+   "fieldname": "bank_branch",
+   "fieldtype": "Data",
+   "label": "Bank Branch"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "company_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Company Documents"
+  },
+  {
+   "fieldname": "agreement",
+   "fieldtype": "Attach",
+   "label": "Agreement"
+  },
+  {
+   "depends_on": "eval:doc.type_of_organisation == 'Partnership'",
+   "fieldname": "partnership_deed",
+   "fieldtype": "Attach",
+   "label": "Partnership Deed"
+  },
+  {
+   "depends_on": "eval: doc.type_of_organisation == \"Private Limited\" || doc.type_of_organisation == \"Public Limited\" || doc.type_of_organisation == \"LLP (Limited Liability Partnership)\"",
+   "fieldname": "moa",
+   "fieldtype": "Attach",
+   "label": "MoA"
+  },
+  {
+   "fieldname": "column_break_j70x8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_card",
+   "fieldtype": "Attach",
+   "label": "PAN Card"
+  },
+  {
+   "depends_on": "eval: doc.type_of_organisation == \"Private Limited\" || doc.type_of_organisation == \"Public Limited\" || doc.type_of_organisation == \"LLP (Limited Liability Partnership)\"",
+   "fieldname": "aoa",
+   "fieldtype": "Attach",
+   "label": "AoA"
+  },
+  {
+   "fieldname": "column_break_cxm46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gst_certificate",
+   "fieldtype": "Attach",
+   "label": "GST Certificate"
+  },
+  {
+   "depends_on": "eval: doc.type_of_organisation == \"Private Limited\" || doc.type_of_organisation == \"Public Limited\" || doc.type_of_organisation == \"LLP (Limited Liability Partnership)\"\r\n",
+   "fieldname": "board_resolution",
+   "fieldtype": "Attach",
+   "label": "Board Resolution"
+  },
+  {
+   "fieldname": "column_break_wxiag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cancelled_cheque",
+   "fieldtype": "Attach",
+   "label": "Cancelled Cheque"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-07 12:35:53.063464",
+ "modified_by": "Administrator",
+ "module": "Edufincustoms",
+ "name": "Smart Board Vendors",
+ "name_case": "UPPER CASE",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

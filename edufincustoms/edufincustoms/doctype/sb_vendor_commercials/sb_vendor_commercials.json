@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-01-07 12:37:34.921759",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor_name",
+  "emi_tenure",
+  "subvention_",
+  "roi_",
+  "pf_"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Link",
+   "label": "Vendor Name",
+   "options": "Smart Board Vendors"
+  },
+  {
+   "fieldname": "emi_tenure",
+   "fieldtype": "Data",
+   "label": "EMI Tenure (Months)"
+  },
+  {
+   "fieldname": "subvention_",
+   "fieldtype": "Percent",
+   "label": "Subvention %"
+  },
+  {
+   "fieldname": "roi_",
+   "fieldtype": "Percent",
+   "label": "ROI %"
+  },
+  {
+   "fieldname": "pf_",
+   "fieldtype": "Percent",
+   "label": "PF %"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-07 12:37:34.921759",
+ "modified_by": "Administrator",
+ "module": "Edufincustoms",
+ "name": "SB Vendor Commercials",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

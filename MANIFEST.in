@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include edufincustoms *.css
+recursive-include edufincustoms *.csv
+recursive-include edufincustoms *.html
+recursive-include edufincustoms *.ico
+recursive-include edufincustoms *.js
+recursive-include edufincustoms *.json
+recursive-include edufincustoms *.md
+recursive-include edufincustoms *.png
+recursive-include edufincustoms *.py
+recursive-include edufincustoms *.svg
+recursive-include edufincustoms *.txt
+recursive-exclude edufincustoms *.pyc
