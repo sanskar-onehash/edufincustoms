@@ -11,7 +11,7 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/edufincustoms/css/edufincustoms.css"
+app_include_css = "/assets/edufincustoms/css/edufincustoms.css"
 # app_include_js = "/assets/edufincustoms/js/edufincustoms.js"
 
 # include js, css files in header of web template

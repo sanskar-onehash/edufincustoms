@@ -1,0 +1,11 @@
+﻿:root {
+  --primary: #2490ef;
+  --btn-primary: #2490ef;
+  --brand-primary: #393185;
+  --weight-regular: 400;
+}
+.btn.btn-primary:active {
+  background: var(--primary) !important;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
